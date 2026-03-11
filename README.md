@@ -1,8 +1,6 @@
 # Hey, I'm Rene
 
-I build AI-powered systems, cloud infrastructure, and automation that ships.
-
-**What I work with:** Claude API, LLM pipelines, TypeScript, Go, Kubernetes, Linux, full-stack
+AI/LLM engineer building production systems with Claude, TypeScript, and Go. Infrastructure to full-stack.
 
 **What I do:**
 - AI/LLM engineering — agents, tool use, structured output, production deployments
