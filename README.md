@@ -1,4 +1,4 @@
-# Hey, I'm Rene
+# Hey, I'm René
 
 Enterprise Architect and AI Infrastructure Engineer. 14 years in enterprise, now building production AI systems.
 
