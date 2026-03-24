@@ -1,12 +1,14 @@
 # Hey, I'm Rene
 
-AI/LLM engineer building production systems with Claude, TypeScript, and Go. Infrastructure to full-stack.
+Enterprise Architect and AI Infrastructure Engineer. 14 years in enterprise, now building production AI systems.
 
-**What I do:**
-- AI/LLM engineering — agents, tool use, structured output, production deployments
-- Cloud infrastructure and DevOps — Kubernetes, bare metal, CI/CD
-- Full-stack development — React, Node, Go services
+**What I build:**
+- AI agent infrastructure: orchestration, HITL approval workflows, monitoring, semantic search
+- Enterprise architecture: capability mapping, API strategy, integration design
+- Cloud and DevOps: Kubernetes, Linux, systemd services, CI/CD
+
+**What I work with:** Go, TypeScript, LLM APIs, vector databases, cron orchestration
 
 **Book a call:** [cal.eu/reneza](https://www.cal.eu/reneza)
 
-**Find me on:** [Dev.to](https://dev.to/renezander030) · [LinkedIn](https://linkedin.com/in/reneza) · [Upwork](https://www.upwork.com/freelancers/reneza)
+**Find me on:** [Dev.to](https://dev.to/renezander030) · [LinkedIn](https://linkedin.com/in/reneza)
