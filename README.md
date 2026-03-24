@@ -11,6 +11,6 @@ Enterprise Architect and AI Infrastructure Engineer. 14 years in enterprise, now
 
 **What I work with:** Go, TypeScript, LLM APIs, vector databases, cron orchestration
 
-**Book a call:** [cal.eu/reneza](https://www.cal.eu/reneza)
+**Website:** [renezander.com](https://renezander.com)
 
 **Find me on:** [Dev.to](https://dev.to/renezander030) · [LinkedIn](https://linkedin.com/in/reneza)
