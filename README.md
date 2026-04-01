@@ -11,6 +11,8 @@ Enterprise Architect and AI Infrastructure Engineer. 14 years in enterprise, now
 
 **What I work with:** Go, TypeScript, LLM APIs, vector databases, cron orchestration
 
+[![Contributor to Tencent WeKnora](https://img.shields.io/badge/Contributor-Tencent%20WeKnora-blue)](https://github.com/Tencent/WeKnora/pull/835) [![Contributor to beads](https://img.shields.io/badge/Contributor-beads-blue)](https://github.com/renezander030/beads)
+
 **Open source contributions:**
 
 | Project | PR | What |
