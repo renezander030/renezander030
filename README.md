@@ -24,4 +24,16 @@ Solution Architect and AI Engineer. 6 years in architecture roles at Fortune 500
 
 [All merged PRs](https://github.com/pulls?q=is%3Apr+author%3Arenezander030+is%3Amerged+archived%3Afalse)
 
+**Latest gists:**
+
+| Gist | Topic |
+|---|---|
+| [CLAUDE.md — 10 rules, edit-time and runtime](https://gist.github.com/renezander030/2898eb5f0100688f4197b5e493e156a2) | Claude Code guardrails |
+| [Minimal pipeline engine (Go)](https://gist.github.com/renezander030/d800e30382f164488686b4c463f5361f) | AI pipeline infra |
+| [Pipeline config with budgets + HITL (YAML)](https://gist.github.com/renezander030/3725d3231a18e7121b7ba9773f68736c) | AI pipeline infra |
+| [Declarative AI skill format (YAML)](https://gist.github.com/renezander030/193841e61d788215facadfe6b562768b) | AI pipeline infra |
+| [OAuth2 refresh for Google APIs (Go, no SDK)](https://gist.github.com/renezander030/91b8466150dccaeffb2fbe86f52e82b0) | Go infra |
+
+[All gists →](https://gist.github.com/renezander030)
+
 **Website:** [renezander.com](https://renezander.com)
