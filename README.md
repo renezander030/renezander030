@@ -28,7 +28,7 @@ Follow if you're building agents that need to work outside demos.
 
 | Gist | Topic |
 |---|---|
-| [Claude Code with local LLMs: ANTHROPIC_BASE_URL, Ollama, LM Studio, vLLM, LiteLLM](https://gist.github.com/renezander030/39249215616a095d74fe6c66b0348641) | Compatibility matrix + tool-call failures |
+| [Claude Code with local LLMs: ANTHROPIC_BASE_URL, Ollama, LM Studio, vLLM, LiteLLM](https://gist.github.com/renezander030/39249215616a095d74fe6c66b0348641) | gpt-oss / qwen3-coder / glm-4.7 setup + tool-call failures (Apr 2026) |
 | [Production AI Automation Notes #1: Agent Approval Gates](https://gist.github.com/renezander030/9069db775e494ffd2cdd5a09adf83add) | Series #1 — approval-gate pattern |
 | [CLAUDE.md — 10 rules, edit-time and runtime](https://gist.github.com/renezander030/2898eb5f0100688f4197b5e493e156a2) | Claude Code guardrails |
 | [Context7 v2 — enterprise GraphQL MCP pattern](https://gist.github.com/renezander030/83ad49aeffa5f8749325a2b19617823f) | MCP server design |
