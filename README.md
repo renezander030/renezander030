@@ -28,11 +28,11 @@ Follow if you're building agents that need to work outside demos.
 
 | Gist | Topic |
 |---|---|
+| [Claude Code with local LLMs: ANTHROPIC_BASE_URL, Ollama, LM Studio, vLLM, LiteLLM](https://gist.github.com/renezander030/39249215616a095d74fe6c66b0348641) | Compatibility matrix + tool-call failures |
 | [Production AI Automation Notes #1: Agent Approval Gates](https://gist.github.com/renezander030/9069db775e494ffd2cdd5a09adf83add) | Series #1 — approval-gate pattern |
 | [CLAUDE.md — 10 rules, edit-time and runtime](https://gist.github.com/renezander030/2898eb5f0100688f4197b5e493e156a2) | Claude Code guardrails |
 | [Context7 v2 — enterprise GraphQL MCP pattern](https://gist.github.com/renezander030/83ad49aeffa5f8749325a2b19617823f) | MCP server design |
 | [Minimal pipeline engine (Go)](https://gist.github.com/renezander030/d800e30382f164488686b4c463f5361f) | AI pipeline infra |
-| [Pipeline config with budgets + HITL (YAML)](https://gist.github.com/renezander030/3725d3231a18e7121b7ba9773f68736c) | AI pipeline infra |
 
 [All gists →](https://gist.github.com/renezander030)
 
