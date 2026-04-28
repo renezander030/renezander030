@@ -29,10 +29,10 @@ Solution Architect and AI Engineer. 6 years in architecture roles at Fortune 500
 | Gist | Topic |
 |---|---|
 | [CLAUDE.md — 10 rules, edit-time and runtime](https://gist.github.com/renezander030/2898eb5f0100688f4197b5e493e156a2) | Claude Code guardrails |
+| [Context7 v2 — enterprise GraphQL MCP pattern](https://gist.github.com/renezander030/83ad49aeffa5f8749325a2b19617823f) | MCP server design |
 | [Minimal pipeline engine (Go)](https://gist.github.com/renezander030/d800e30382f164488686b4c463f5361f) | AI pipeline infra |
 | [Pipeline config with budgets + HITL (YAML)](https://gist.github.com/renezander030/3725d3231a18e7121b7ba9773f68736c) | AI pipeline infra |
 | [Declarative AI skill format (YAML)](https://gist.github.com/renezander030/193841e61d788215facadfe6b562768b) | AI pipeline infra |
-| [OAuth2 refresh for Google APIs (Go, no SDK)](https://gist.github.com/renezander030/91b8466150dccaeffb2fbe86f52e82b0) | Go infra |
 
 [All gists →](https://gist.github.com/renezander030)
 
