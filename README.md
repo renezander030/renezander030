@@ -8,7 +8,7 @@ If you're building agents that need to touch real systems safely — not demo ag
 
 ## Start here
 
-- **agent-approval-gate** — `draft → validate → approve → dispatch → audit` pattern with JSON schemas and n8n / email / CRM examples *(coming this week)*
+- **[agent-approval-gate](https://github.com/renezander030/agent-approval-gate)** — `draft → validate → approve → dispatch → audit` pattern with JSON schemas, n8n workflow, and email-approval example
 - **mcp-internal-tools-starter** — TypeScript MCP starter with permissions, tenants, audit logs, approval tools *(coming next week)*
 - **[leanix-mcp-integration](https://github.com/renezander030/leanix-mcp-integration)** — enterprise GraphQL MCP integration (LeanIX EAM)
 - **[fixclaw](https://github.com/renezander030/fixclaw)** — Claude Code runtime discipline for deterministic AI pipelines (Go)
