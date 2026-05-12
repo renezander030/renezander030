@@ -2,13 +2,14 @@
 
 # Hey, I'm René
 
-I publish practical patterns for production AI automation: MCP servers, Claude Code workflows, n8n approval gates, audit logs, internal-tool integrations.
+I publish practical gates for AI-generated work: approval gates, schema validation, audit logs, MCP server patterns, and deterministic code-review checks.
 
 If you're building agents that need to touch real systems safely — not demo agents — this profile is for you.
 
 ## Start here
 
 - **[agent-approval-gate](https://github.com/renezander030/agent-approval-gate)** — `draft → validate → approve → dispatch → audit` pattern with JSON schemas, n8n workflow, and email-approval example
+- **[agentproof-react](https://github.com/renezander030/agentproof-react)** — npm CLI that blocks common AI-generated React/Next.js shipping failures before release
 - **mcp-internal-tools-starter** — TypeScript MCP starter with permissions, tenants, audit logs, approval tools *(coming next week)*
 - **[leanix-mcp-integration](https://github.com/renezander030/leanix-mcp-integration)** — enterprise GraphQL MCP integration (LeanIX EAM)
 - **[fixclaw](https://github.com/renezander030/fixclaw)** — Claude Code runtime discipline for deterministic AI pipelines (Go)
