@@ -53,3 +53,21 @@ Follow if you're building agents that need to work outside demos.
 **Stack:** Go, TypeScript, Node.js, Kubernetes, Linux, systemd, vector databases, LLM APIs.
 
 **Website:** [renezander.com](https://renezander.com)
+
+## Production AI Automation Notes
+
+A gist series on production-grade patterns for AI pipelines. Each entry covers one pattern with copy-pasteable code.
+
+| # | Topic | Pattern |
+|---|---|---|
+| [#1](https://gist.github.com/renezander030/9069db775e494ffd2cdd5a09adf83add) | Agent Approval Gates | Schema-validated proposals, human review, deterministic dispatch |
+| [#2](https://gist.github.com/renezander030/a7d99ad94b97f7943a9a04016d62faaa) | Token Budgets | Per-step, per-pipeline, per-day enforcement |
+| [#3](https://gist.github.com/renezander030/c7bd6d5c4088e24d3add043720284453) | Agentic Knowledge Base | Karpathy-style LLM wiki with pluggable adapters |
+| [#4](https://gist.github.com/renezander030/866bd85789c5902471f8f5fc86d09342) | CapCut / JianYing from an LLM agent | Deterministic JSON command boundary |
+| [#5](https://gist.github.com/renezander030/8a23e32cde0c882a5aa069c4bfdf697f) | SQLite Dedup + Crash Safety | WAL mode, seen_items, audit log |
+| [#6](https://gist.github.com/renezander030/213ffdf1ab1bdb169881927bc7080270) | Prompt-Injection Defense | Input sanitization, schema validation |
+| [#7](https://gist.github.com/renezander030/7780cbc0b3ad4e802e8fba8bfc1c3a66) | PDF Cite Verification | Auditable LLM extraction with per-fragment bounding boxes |
+
+Reference implementation for entries #1, #2, #5, #6, #7: [draftyard](https://github.com/renezander030/draftyard) (Go, MIT).
+
+[All gists →](https://gist.github.com/renezander030)
