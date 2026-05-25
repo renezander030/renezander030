@@ -29,11 +29,11 @@ Follow if you're building agents that need to work outside demos.
 
 | Gist | Topic |
 |---|---|
+| [CapCut / JianYing draft_content.json schema cheat sheet](https://gist.github.com/renezander030/80823f1d47081c312d2c1f9edd20dc22) | every top-level key + version differences + jq one-liners (May 2026) |
+| [JianYing 6.0+ draft_content.json encryption: detection and workarounds](https://gist.github.com/renezander030/521e6c6e8590a2a6e917009d9313bc55) | 剪映 6.0 / 7.x / 10.3 / CapCut International — verbatim error strings (May 2026) |
+| [Driving CapCut / JianYing video drafts from an LLM agent (PAAN #4)](https://gist.github.com/renezander030/866bd85789c5902471f8f5fc86d09342) | capcut-cli / bubble-text / audio-fade / mix-mode / Claude / DeepSeek / GLM (May 2026) |
 | [Hybrid AI agents: a 2B local VLM beats GPT-4V at browser-use UI grounding](https://gist.github.com/renezander030/947baf076f95c50db5a3e3d4b16cbd14) | browserground / Qwen3-VL / ScreenSpot-v2 / browser-use / Skyvern / Claude Computer Use (May 2026) |
 | [Claude Code with local LLMs: ANTHROPIC_BASE_URL, Ollama, LM Studio, vLLM, LiteLLM](https://gist.github.com/renezander030/39249215616a095d74fe6c66b0348641) | gpt-oss / qwen3-coder / glm-4.7 setup + tool-call failures (Apr 2026) |
-| [Production AI Automation Notes #1: Agent Approval Gates](https://gist.github.com/renezander030/9069db775e494ffd2cdd5a09adf83add) | Series #1 — approval-gate pattern |
-| [CLAUDE.md — 10 rules, edit-time and runtime](https://gist.github.com/renezander030/2898eb5f0100688f4197b5e493e156a2) | Claude Code guardrails |
-| [Context7 v2 — enterprise GraphQL MCP pattern](https://gist.github.com/renezander030/83ad49aeffa5f8749325a2b19617823f) | MCP server design |
 
 [All gists →](https://gist.github.com/renezander030)
 
