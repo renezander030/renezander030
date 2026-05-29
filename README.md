@@ -4,15 +4,17 @@
 
 I publish practical gates for AI-generated work: approval gates, schema validation, audit logs, MCP server patterns, and deterministic code-review checks.
 
-If you're building agents that need to touch real systems safely — not demo agents — this profile is for you.
+If you're building agents that need to touch real systems safely — not demo agents — this profile is for you. **Follow for new production-AI patterns** as they ship.
+
+[![Follow](https://img.shields.io/github/followers/renezander030?label=Follow&style=social)](https://github.com/renezander030?tab=followers) [![capcut-cli stars](https://img.shields.io/github/stars/renezander030/capcut-cli?label=capcut-cli&style=social)](https://github.com/renezander030/capcut-cli) [![Profile views](https://komarev.com/ghpvc/?username=renezander030&label=Profile+views&color=14b8a6&style=flat)](https://github.com/renezander030)
 
 ## Start here
 
+- **[capcut-cli](https://github.com/renezander030/capcut-cli)** — CLI to edit CapCut / JianYing drafts (subtitles, timing, speed, templates, cut long-form → shorts). No API; reads `draft_content.json` directly
 - **[agent-approval-gate](https://github.com/renezander030/agent-approval-gate)** — `draft → validate → approve → dispatch → audit` pattern with JSON schemas, n8n workflow, and email-approval example
 - **[agentproof-react](https://github.com/renezander030/agentproof-react)** — npm CLI that blocks common AI-generated React/Next.js shipping failures before release
-- **mcp-internal-tools-starter** — TypeScript MCP starter with permissions, tenants, audit logs, approval tools *(coming next week)*
+- **[draftyard](https://github.com/renezander030/draftyard)** — Go reference implementation of the approval-gate pattern: schema-validated proposals, token budgets, audit log (MIT)
 - **[leanix-mcp-integration](https://github.com/renezander030/leanix-mcp-integration)** — enterprise GraphQL MCP integration (LeanIX EAM)
-- **[fixclaw](https://github.com/renezander030/fixclaw)** — Claude Code runtime discipline for deterministic AI pipelines (Go)
 
 ## The series
 
@@ -47,6 +49,8 @@ Follow if you're building agents that need to work outside demos.
 | [pacifio/cersei](https://github.com/pacifio/cersei) | [#10](https://github.com/pacifio/cersei/pull/10) ![Merged](https://img.shields.io/badge/Merged-purple) | Native Google Gemini provider + Cohere & SambaNova support |
 
 [All merged PRs](https://github.com/pulls?q=is%3Apr+author%3Arenezander030+is%3Amerged+archived%3Afalse)
+
+[![GitHub stats](https://github-readme-stats.vercel.app/api?username=renezander030&show_icons=true&hide=stars,issues&hide_border=true&card_width=440)](https://github.com/renezander030)
 
 ---
 
