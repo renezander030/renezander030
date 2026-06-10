@@ -11,10 +11,10 @@ If you script things, run agents, or want CLIs that do one job well with JSON ou
 ## Start here
 
 - **[capcut-cli](https://github.com/renezander030/capcut-cli)** — CLI to edit CapCut / JianYing drafts (subtitles, timing, speed, templates, cut long-form → shorts). No API; reads `draft_content.json` directly
-- **[coinregime](https://github.com/renezander030/coinregime)** — is the crypto market bull, chop, or bear? One command, public data, no API keys, zero dependencies. Extracted from a live trading bot's steering layer
+- **[draftcat](https://github.com/renezander030/draftcat)** — governed AI pipelines for service businesses: deterministic-first, operator-approved, single Go binary (MIT)
+- **[agentic-task-system](https://github.com/renezander030/agentic-task-system)** — your task manager is the best agent memory you're not using: hybrid retrieval (RRF) over TickTick / Obsidian
 - **[agent-approval-gate](https://github.com/renezander030/agent-approval-gate)** — `draft → validate → approve → dispatch → audit` pattern with JSON schemas, n8n workflow, and email-approval example
 - **[browserground](https://github.com/renezander030/browserground)** — local UI-grounding specialist for hybrid AI agents: Qwen3-VL-2B LoRA, screenshot + target → strict JSON bbox. Drop-in for Claude Code, Codex, browser-use
-- **[agentic-task-system](https://github.com/renezander030/agentic-task-system)** — your task manager is the best agent memory you're not using: hybrid retrieval (RRF) over TickTick / Obsidian
 
 ## The series
 
