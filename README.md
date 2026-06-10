@@ -2,19 +2,19 @@
 
 # Hey, I'm René
 
-I publish practical gates for AI-generated work: approval gates, schema validation, audit logs, MCP server patterns, and deterministic code-review checks.
+I build **automation CLIs and AI-agent tooling** — sharp single-purpose command-line tools, plus the production patterns (approval gates, schema validation, audit logs) that let agents touch real systems safely.
 
-If you're building agents that need to touch real systems safely — not demo agents — this profile is for you. **Follow for new production-AI patterns** as they ship.
+If you script things, run agents, or want CLIs that do one job well with JSON output you can pipe — this profile is for you. **Follow for new CLIs and production-AI patterns** as they ship.
 
 [![Follow](https://img.shields.io/github/followers/renezander030?label=Follow&style=social)](https://github.com/renezander030?tab=followers) [![capcut-cli stars](https://img.shields.io/github/stars/renezander030/capcut-cli?label=capcut-cli&style=social)](https://github.com/renezander030/capcut-cli) [![Profile views](https://komarev.com/ghpvc/?username=renezander030&label=Profile+views&color=14b8a6&style=flat)](https://github.com/renezander030)
 
 ## Start here
 
 - **[capcut-cli](https://github.com/renezander030/capcut-cli)** — CLI to edit CapCut / JianYing drafts (subtitles, timing, speed, templates, cut long-form → shorts). No API; reads `draft_content.json` directly
+- **[coinregime](https://github.com/renezander030/coinregime)** — is the crypto market bull, chop, or bear? One command, public data, no API keys, zero dependencies. Extracted from a live trading bot's steering layer
 - **[agent-approval-gate](https://github.com/renezander030/agent-approval-gate)** — `draft → validate → approve → dispatch → audit` pattern with JSON schemas, n8n workflow, and email-approval example
-- **[agentproof-react](https://github.com/renezander030/agentproof-react)** — npm CLI that blocks common AI-generated React/Next.js shipping failures before release
-- **[draftyard](https://github.com/renezander030/draftyard)** — Go reference implementation of the approval-gate pattern: schema-validated proposals, token budgets, audit log (MIT)
-- **[leanix-mcp-integration](https://github.com/renezander030/leanix-mcp-integration)** — enterprise GraphQL MCP integration (LeanIX EAM)
+- **[browserground](https://github.com/renezander030/browserground)** — local UI-grounding specialist for hybrid AI agents: Qwen3-VL-2B LoRA, screenshot + target → strict JSON bbox. Drop-in for Claude Code, Codex, browser-use
+- **[agentic-task-system](https://github.com/renezander030/agentic-task-system)** — your task manager is the best agent memory you're not using: hybrid retrieval (RRF) over TickTick / Obsidian
 
 ## The series
 
@@ -54,7 +54,7 @@ Follow if you're building agents that need to work outside demos.
 
 ---
 
-**Stack:** Go, TypeScript, Node.js, Kubernetes, Linux, systemd, vector databases, LLM APIs.
+**Stack:** Python, Go, TypeScript, Node.js, Kubernetes, Linux, systemd, vector databases, LLM APIs.
 
 **Website:** [renezander.com](https://renezander.com)
 
@@ -73,6 +73,6 @@ A gist series on production-grade patterns for AI pipelines. Each entry covers o
 | [#7](https://gist.github.com/renezander030/7780cbc0b3ad4e802e8fba8bfc1c3a66) | PDF Cite Verification | Auditable LLM extraction with per-fragment bounding boxes |
 | [#8](https://gist.github.com/renezander030/807559488f523892fc25870bf9501d29) | Stateless JSONL Queue Runner | Wire a CLI into n8n / Make / Coze, no HTTP server |
 
-Reference implementation for entries #1, #2, #5, #6, #7: [draftyard](https://github.com/renezander030/draftyard) (Go, MIT).
+Reference implementation for entries #1, #2, #5, #6, #7: [draftcat](https://github.com/renezander030/draftcat) (Go, MIT).
 
 [All gists →](https://gist.github.com/renezander030)
