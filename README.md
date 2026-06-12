@@ -31,11 +31,13 @@ Follow if you're building agents that need to work outside demos.
 
 | Gist | Topic |
 |---|---|
+| [Claude Code persistent memory between sessions: task manager as agent memory via MCP (PAAN #3)](https://gist.github.com/renezander030/c7bd6d5c4088e24d3add043720284453) | claude mcp add / TickTick / Obsidian / PreCompact alternative / no vector DB (June 2026) |
+| [TickTick MCP server for Claude Code & Claude Desktop](https://gist.github.com/renezander030/cd5164e11d82347250cbf03ac36be984) | ticktick mcp / OAuth / exceed_query_limit / hybrid RRF retrieval (June 2026) |
+| [Obsidian vault as agent memory for Claude Code](https://gist.github.com/renezander030/4a58df68397eba99ccc8daa14793b4d0) | obsidian mcp / ATS_OBSIDIAN_VAULT / headless, no REST API plugin (June 2026) |
+| [Agent memory without a vector database: RRF in 15 lines of JS](https://gist.github.com/renezander030/41af917a5ae84a42b5912bc20a5db615) | reciprocal rank fusion / k=60 / hit@1 bench numbers (June 2026) |
 | [AI agents that can't pick their own next action: deterministic step pipelines in Go (PAAN #10)](https://gist.github.com/renezander030/2f0754a4babd185d22d8498d5dc04982) | ai agents / ai automation / deterministic / ai · approval steps / schema-validated / autonomous agent / Go (June 2026) |
-| [LLM cost tracking in Go: a per-model price model on top of token budgets (PAAN #9)](https://gist.github.com/renezander030/2de8a7c169d0eac0d857f52d2cda061e) | cost_per_1k_input / cost_per_1k_output / dollar spend / BUDGET_BLOCKED / OpenRouter / Go (June 2026) |
-| [Stateless JSONL queue runner: a CLI into n8n / Make / Coze, no HTTP server (PAAN #8)](https://gist.github.com/renezander030/807559488f523892fc25870bf9501d29) | n8n Execute Command / stateless / JSONL / no daemon / capcut-cli serve (May 2026) |
-| [CapCut / JianYing draft_content.json schema cheat sheet](https://gist.github.com/renezander030/80823f1d47081c312d2c1f9edd20dc22) | every top-level key + version differences + jq one-liners (May 2026) |
-| [JianYing 6.0+ draft_content.json encryption: detection and workarounds](https://gist.github.com/renezander030/521e6c6e8590a2a6e917009d9313bc55) | 剪映 6.0 / 7.x / 10.3 / CapCut International — verbatim error strings (May 2026) |[All gists →](https://gist.github.com/renezander030)
+
+[All gists →](https://gist.github.com/renezander030)
 
 ## Open source contributions
 
@@ -69,8 +71,6 @@ A gist series on production-grade patterns for AI pipelines. Each entry covers o
 | [#5](https://gist.github.com/renezander030/8a23e32cde0c882a5aa069c4bfdf697f) | SQLite Dedup + Crash Safety | WAL mode, seen_items, audit log |
 | [#6](https://gist.github.com/renezander030/213ffdf1ab1bdb169881927bc7080270) | Prompt-Injection Defense | Input sanitization, schema validation |
 | [#7](https://gist.github.com/renezander030/7780cbc0b3ad4e802e8fba8bfc1c3a66) | PDF Cite Verification | Auditable LLM extraction with per-fragment bounding boxes |
-| [#8](https://gist.github.com/renezander030/807559488f523892fc25870bf9501d29) | Stateless JSONL Queue Runner | Wire a CLI into n8n / Make / Coze, no HTTP server |
-| [#9](https://gist.github.com/renezander030/2de8a7c169d0eac0d857f52d2cda061e) | LLM Cost Tracking | Per-model price model + dollar spend on top of token budgets |
 | [#10](https://gist.github.com/renezander030/2f0754a4babd185d22d8498d5dc04982) | Deterministic Step Pipelines | Fixed typed steps; the LLM never picks the next action |
 
 Reference implementation for entries #1, #2, #5, #6, #7, #9, #10: [draftcat](https://github.com/renezander030/draftcat) (Go, MIT).
