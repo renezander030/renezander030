@@ -31,12 +31,11 @@ Follow if you're building agents that need to work outside demos.
 
 | Gist | Topic |
 |---|---|
+| [LLM cost tracking in Go: a per-model price model on top of token budgets (PAAN #9)](https://gist.github.com/renezander030/2de8a7c169d0eac0d857f52d2cda061e) | cost_per_1k_input / cost_per_1k_output / dollar spend / BUDGET_BLOCKED / OpenRouter / Go (June 2026) |
 | [Stateless JSONL queue runner: a CLI into n8n / Make / Coze, no HTTP server (PAAN #8)](https://gist.github.com/renezander030/807559488f523892fc25870bf9501d29) | n8n Execute Command / stateless / JSONL / no daemon / capcut-cli serve (May 2026) |
 | [CapCut / JianYing draft_content.json schema cheat sheet](https://gist.github.com/renezander030/80823f1d47081c312d2c1f9edd20dc22) | every top-level key + version differences + jq one-liners (May 2026) |
 | [JianYing 6.0+ draft_content.json encryption: detection and workarounds](https://gist.github.com/renezander030/521e6c6e8590a2a6e917009d9313bc55) | 剪映 6.0 / 7.x / 10.3 / CapCut International — verbatim error strings (May 2026) |
 | [Driving CapCut / JianYing video drafts from an LLM agent (PAAN #4)](https://gist.github.com/renezander030/866bd85789c5902471f8f5fc86d09342) | capcut-cli / bubble-text / audio-fade / mix-mode / Claude / DeepSeek / GLM (May 2026) |
-| [Hybrid AI agents: a 2B local VLM beats GPT-4V at browser-use UI grounding](https://gist.github.com/renezander030/947baf076f95c50db5a3e3d4b16cbd14) | browserground / Qwen3-VL / ScreenSpot-v2 / browser-use / Skyvern / Claude Computer Use (May 2026) |
-
 [All gists →](https://gist.github.com/renezander030)
 
 ## Open source contributions
@@ -72,7 +71,8 @@ A gist series on production-grade patterns for AI pipelines. Each entry covers o
 | [#6](https://gist.github.com/renezander030/213ffdf1ab1bdb169881927bc7080270) | Prompt-Injection Defense | Input sanitization, schema validation |
 | [#7](https://gist.github.com/renezander030/7780cbc0b3ad4e802e8fba8bfc1c3a66) | PDF Cite Verification | Auditable LLM extraction with per-fragment bounding boxes |
 | [#8](https://gist.github.com/renezander030/807559488f523892fc25870bf9501d29) | Stateless JSONL Queue Runner | Wire a CLI into n8n / Make / Coze, no HTTP server |
+| [#9](https://gist.github.com/renezander030/2de8a7c169d0eac0d857f52d2cda061e) | LLM Cost Tracking | Per-model price model + dollar spend on top of token budgets |
 
-Reference implementation for entries #1, #2, #5, #6, #7: [draftcat](https://github.com/renezander030/draftcat) (Go, MIT).
+Reference implementation for entries #1, #2, #5, #6, #7, #9: [draftcat](https://github.com/renezander030/draftcat) (Go, MIT).
 
 [All gists →](https://gist.github.com/renezander030)
