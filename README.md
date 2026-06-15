@@ -31,11 +31,11 @@ Follow if you're building agents that need to work outside demos.
 
 | Gist | Topic |
 |---|---|
+| [Test LLM agent pipelines with fixtures: zero API calls, zero tokens (PAAN #11)](https://gist.github.com/renezander030/a058fc0d5e7e7fa209d30cfa48e82ebb) | fixture testing / dry-run pipeline / no API key in CI / mock LLM response / golden file / Go (June 2026) |
 | [Claude Code persistent memory between sessions: task manager as agent memory via MCP (PAAN #3)](https://gist.github.com/renezander030/c7bd6d5c4088e24d3add043720284453) | claude mcp add / TickTick / Obsidian / PreCompact alternative / no vector DB (June 2026) |
 | [TickTick MCP server for Claude Code & Claude Desktop](https://gist.github.com/renezander030/cd5164e11d82347250cbf03ac36be984) | ticktick mcp / OAuth / exceed_query_limit / hybrid RRF retrieval (June 2026) |
 | [Obsidian vault as agent memory for Claude Code](https://gist.github.com/renezander030/4a58df68397eba99ccc8daa14793b4d0) | obsidian mcp / ATS_OBSIDIAN_VAULT / headless, no REST API plugin (June 2026) |
 | [Agent memory without a vector database: RRF in 15 lines of JS](https://gist.github.com/renezander030/41af917a5ae84a42b5912bc20a5db615) | reciprocal rank fusion / k=60 / hit@1 bench numbers (June 2026) |
-| [AI agents that can't pick their own next action: deterministic step pipelines in Go (PAAN #10)](https://gist.github.com/renezander030/2f0754a4babd185d22d8498d5dc04982) | ai agents / ai automation / deterministic / ai · approval steps / schema-validated / autonomous agent / Go (June 2026) |
 
 [All gists →](https://gist.github.com/renezander030)
 
@@ -72,7 +72,8 @@ A gist series on production-grade patterns for AI pipelines. Each entry covers o
 | [#6](https://gist.github.com/renezander030/213ffdf1ab1bdb169881927bc7080270) | Prompt-Injection Defense | Input sanitization, schema validation |
 | [#7](https://gist.github.com/renezander030/7780cbc0b3ad4e802e8fba8bfc1c3a66) | PDF Cite Verification | Auditable LLM extraction with per-fragment bounding boxes |
 | [#10](https://gist.github.com/renezander030/2f0754a4babd185d22d8498d5dc04982) | Deterministic Step Pipelines | Fixed typed steps; the LLM never picks the next action |
+| [#11](https://gist.github.com/renezander030/a058fc0d5e7e7fa209d30cfa48e82ebb) | Pipeline Fixture Testing | Dry-run pipelines from JSON fixtures; zero API calls, deterministic CI |
 
-Reference implementation for entries #1, #2, #5, #6, #7, #9, #10: [draftcat](https://github.com/renezander030/draftcat) (Go, MIT).
+Reference implementation for entries #1, #2, #5, #6, #7, #9, #10, #11: [draftcat](https://github.com/renezander030/draftcat) (Go, MIT).
 
 [All gists →](https://gist.github.com/renezander030)
