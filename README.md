@@ -31,11 +31,11 @@ Follow if you're building agents that need to work outside demos.
 
 | Gist | Topic |
 |---|---|
+| [Self-improving voice AI agent: human-approved prompt diffs, Dograh learning loop (PAAN #14)](https://gist.github.com/renezander030/262d8b8c44b4cddf51b3b84c40f3f669) | self-improving voice agent / human-in-the-loop prompt update / Learning-Item review / Dograh webhook / workflow auto-versioning / DACH voice screening / Go (June 2026) |
 | [Authenticating inbound agent webhooks in Go: constant-time bearer token, async 202 (PAAN #13)](https://gist.github.com/renezander030/26d46d4c7fb9ab1b43fe19bc5bad6d07) | constant-time bearer token / crypto/subtle ConstantTimeCompare / webhook timing attack / secure webhook auth / 202 Accepted / Go (June 2026) |
 | [LLM skills as YAML: prompt + output_schema validation + a linter (PAAN #12)](https://gist.github.com/renezander030/a28f118dec07d275ccc825aa833aba92) | prompt template YAML / validate LLM JSON output / output_schema / enum / prompt as config / Go (June 2026) |
 | [Test LLM agent pipelines with fixtures: zero API calls, zero tokens (PAAN #11)](https://gist.github.com/renezander030/a058fc0d5e7e7fa209d30cfa48e82ebb) | fixture testing / dry-run pipeline / no API key in CI / mock LLM response / golden file / Go (June 2026) |
 | [Claude Code persistent memory between sessions: task manager as agent memory via MCP (PAAN #3)](https://gist.github.com/renezander030/c7bd6d5c4088e24d3add043720284453) | claude mcp add / TickTick / Obsidian / PreCompact alternative / no vector DB (June 2026) |
-| [TickTick MCP server for Claude Code & Claude Desktop](https://gist.github.com/renezander030/cd5164e11d82347250cbf03ac36be984) | ticktick mcp / OAuth / exceed_query_limit / hybrid RRF retrieval (June 2026) |
 
 [All gists →](https://gist.github.com/renezander030)
 
@@ -75,6 +75,7 @@ A gist series on production-grade patterns for AI pipelines. Each entry covers o
 | [#11](https://gist.github.com/renezander030/a058fc0d5e7e7fa209d30cfa48e82ebb) | Pipeline Fixture Testing | Dry-run pipelines from JSON fixtures; zero API calls, deterministic CI |
 | [#12](https://gist.github.com/renezander030/a28f118dec07d275ccc825aa833aba92) | LLM Skills as YAML | Prompt + output_schema + role in versioned YAML; validated by a linter |
 | [#13](https://gist.github.com/renezander030/26d46d4c7fb9ab1b43fe19bc5bad6d07) | Inbound Agent Webhook Auth | Constant-time bearer token, fail-closed on empty secret, async 202 dispatch |
+| [#14](https://gist.github.com/renezander030/262d8b8c44b4cddf51b3b84c40f3f669) | Self-Improving Voice Agent | Human-approved prompt diffs; harvest > group > propose > 2 approval gates > git commit > staging smoke > auto-versioned publish |
 
 Reference implementation for entries #1, #2, #5, #6, #7, #9, #10, #11, #12, #13: [draftcat](https://github.com/renezander030/draftcat) (Go, MIT).
 
