@@ -56,7 +56,7 @@ Follow if you're building agents that need to work outside demos.
 
 **Stack:** Python, Go, TypeScript, Node.js, Kubernetes, Linux, systemd, vector databases, LLM APIs.
 
-**Website:** [renezander.com](https://renezander.com)
+**Website:** [renezander.com](https://renezander.com) · **YouTube:** [@zanderforge](https://www.youtube.com/@zanderforge)
 
 ## Production AI Automation Notes
 
