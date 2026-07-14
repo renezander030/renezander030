@@ -14,6 +14,7 @@ If you script things, run agents, or want CLIs that do one job well with JSON ou
 - **[draftcat](https://github.com/renezander030/draftcat)** — governed AI pipelines for service businesses: deterministic-first, operator-approved, single Go binary (MIT)
 - **[agentic-task-system](https://github.com/renezander030/agentic-task-system)** — your task manager is the best agent memory you're not using: hybrid retrieval (RRF) over TickTick / Obsidian
 - **[agent-approval-gate](https://github.com/renezander030/agent-approval-gate)** — `draft → validate → approve → dispatch → audit` pattern with JSON schemas, n8n workflow, and email-approval example
+- **[skillgate](https://github.com/renezander030/skillgate)** — deterministic finish-line gates for AI coding agents: a model-independent evaluator that blocks commit/publish until your definition-of-done passes. opencode, Claude Code, pre-commit, CI
 - **[browserground](https://github.com/renezander030/browserground)** — local UI-grounding specialist for hybrid AI agents: Qwen3-VL-2B LoRA, screenshot + target → strict JSON bbox. Drop-in for Claude Code, Codex, browser-use
 
 ## The series
