@@ -32,11 +32,11 @@ Follow if you're building agents that need to work outside demos.
 
 | Gist | Topic |
 |---|---|
+| [Retrieval that degrades instead of failing: keyword fallback when the embedder dies (PAAN #16)](https://gist.github.com/renezander030/77b1e95ae3a7b4460db0714b7dcf35d6) | agent memory degraded retrieval / Premature close / APIConnectionError / embedding provider down / keyword fallback / reciprocal rank fusion / RRF / per-source status / no vector database (August 2026) |
 | [Cross-source agent memory for Claude Code: GitHub + Notion + your task app, one RRF query](https://gist.github.com/renezander030/10272100535f9ab1ea0eae193cf3936f) | cross-source retrieval / fuse GitHub Notion TickTick / one ranked list / composite adapter / RRF / no vector database / MCP / Claude Code (June 2026) |
 | [GitHub issues as agent memory for Claude Code — hybrid retrieval, no vector DB](https://gist.github.com/renezander030/1fa5f038e8e1161a75300a34ab534bb2) | github mcp / github issues as agent memory / issues + discussions / fine-grained PAT / hybrid RRF retrieval / no vector database / Claude Code (June 2026) |
 | [Notion as agent memory for Claude Code — hybrid retrieval over your pages](https://gist.github.com/renezander030/33571e8d9e8ea5502e4b6848b2557f05) | notion mcp server / claude code notion / notion agent memory / share database with integration / hybrid RRF / no vector database (June 2026) |
 | [AI agent action audit trail in SQLite: who approved what, when, GDPR Art. 22 (PAAN #15)](https://gist.github.com/renezander030/ad81c7a805a09a844983f881e2c487e5) | AI agent audit trail / who approved what when / GDPR Article 22 / automated decision provenance / append-only approval log / SQLite / Go (June 2026) |
-| [Self-improving voice AI agent: human-approved prompt diffs, Dograh learning loop (PAAN #14)](https://gist.github.com/renezander030/262d8b8c44b4cddf51b3b84c40f3f669) | self-improving voice agent / human-in-the-loop prompt update / Learning-Item review / Dograh webhook / workflow auto-versioning / DACH voice screening / Go (June 2026) |
 
 [All gists →](https://gist.github.com/renezander030)
 
