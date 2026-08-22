@@ -8,6 +8,8 @@ If you script things, run agents, or want CLIs that do one job well with JSON ou
 
 [![Follow](https://img.shields.io/github/followers/renezander030?label=Follow&style=social)](https://github.com/renezander030?tab=followers) [![capcut-cli stars](https://img.shields.io/github/stars/renezander030/capcut-cli?label=capcut-cli&style=social)](https://github.com/renezander030/capcut-cli) [![Profile views](https://komarev.com/ghpvc/?username=renezander030&label=Profile+views&color=14b8a6&style=flat)](https://github.com/renezander030)
 
+> **New:** merged into **[tetherto/qvac](https://github.com/tetherto/qvac)** — the official repo of Tether's QVAC AI platform: [#3729 · validate RAG queries before logging](https://github.com/tetherto/qvac/pull/3729) ![Merged](https://img.shields.io/badge/Merged-purple) (Aug 2026) · [all contributions ↓](#open-source-contributions)
+
 ## Start here
 
 - **[capcut-cli](https://github.com/renezander030/capcut-cli)** — CLI to edit CapCut / JianYing drafts (subtitles, timing, speed, templates, cut long-form → shorts). No API; reads `draft_content.json` directly
@@ -44,6 +46,8 @@ Follow if you're building agents that need to work outside demos.
 
 | Project | PR | What |
 |---|---|---|
+| [tetherto/qvac](https://github.com/tetherto/qvac) | [#3729](https://github.com/tetherto/qvac/pull/3729) ![Merged](https://img.shields.io/badge/Merged-purple) | Validate RAG queries before logging them |
+| [Tencent/WeKnora](https://github.com/Tencent/WeKnora) | [#2614](https://github.com/Tencent/WeKnora/pull/2614) ![Merged](https://img.shields.io/badge/Merged-purple) | GPT-5 / o-series vision model support (max_completion_tokens) |
 | [Tencent/WeKnora](https://github.com/Tencent/WeKnora) | [#835](https://github.com/Tencent/WeKnora/pull/835) ![Merged](https://img.shields.io/badge/Merged-purple) | Parallel tool calling support |
 | [steveyegge/beads](https://github.com/steveyegge/beads) | [#2884](https://github.com/gastownhall/beads/pull/2884) ![Merged](https://img.shields.io/badge/Merged-purple) | Multi-project support, Notion sync, backup/restore |
 | [e2b-dev/infra](https://github.com/e2b-dev/infra) | [#2273](https://github.com/e2b-dev/infra/pull/2273) ![Merged](https://img.shields.io/badge/Merged-purple) | Local dev docs: prerequisites, verification steps, troubleshooting |
