@@ -34,11 +34,11 @@ Follow if you're building agents that need to work outside demos.
 
 | Gist | Topic |
 |---|---|
+| [Validate before you log: the RAG query guard that belongs above your first log line (PAAN #17)](https://gist.github.com/renezander030/34d7197e2d9f83d986766742ab979d04) | RAG query validation / TypeError Cannot read properties of null reading 'substring' / validate before logging / log-ordering test / whitespace-only query / log injection / zod guard / capped log preview (August 2026) |
+| [GPT-5 / o-series vision calls failing in Go: MaxCompletionTokens and the empty finish_reason=length response](https://gist.github.com/renezander030/15f07a6a9e4cf5780f611eeeead5f6da) | gpt-5 vision empty response / this model is not supported MaxTokens please use MaxCompletionTokens / finish_reason length / go-openai ReasoningValidator / o-series temperature beta-limitations / reasoning tokens / max_completion_tokens (August 2026) |
 | [Retrieval that degrades instead of failing: keyword fallback when the embedder dies (PAAN #16)](https://gist.github.com/renezander030/77b1e95ae3a7b4460db0714b7dcf35d6) | agent memory degraded retrieval / Premature close / APIConnectionError / embedding provider down / keyword fallback / reciprocal rank fusion / RRF / per-source status / no vector database (August 2026) |
 | [Cross-source agent memory for Claude Code: GitHub + Notion + your task app, one RRF query](https://gist.github.com/renezander030/10272100535f9ab1ea0eae193cf3936f) | cross-source retrieval / fuse GitHub Notion TickTick / one ranked list / composite adapter / RRF / no vector database / MCP / Claude Code (June 2026) |
 | [GitHub issues as agent memory for Claude Code — hybrid retrieval, no vector DB](https://gist.github.com/renezander030/1fa5f038e8e1161a75300a34ab534bb2) | github mcp / github issues as agent memory / issues + discussions / fine-grained PAT / hybrid RRF retrieval / no vector database / Claude Code (June 2026) |
-| [Notion as agent memory for Claude Code — hybrid retrieval over your pages](https://gist.github.com/renezander030/33571e8d9e8ea5502e4b6848b2557f05) | notion mcp server / claude code notion / notion agent memory / share database with integration / hybrid RRF / no vector database (June 2026) |
-| [AI agent action audit trail in SQLite: who approved what, when, GDPR Art. 22 (PAAN #15)](https://gist.github.com/renezander030/ad81c7a805a09a844983f881e2c487e5) | AI agent audit trail / who approved what when / GDPR Article 22 / automated decision provenance / append-only approval log / SQLite / Go (June 2026) |
 
 [All gists →](https://gist.github.com/renezander030)
 
@@ -82,6 +82,8 @@ A gist series on production-grade patterns for AI pipelines. Each entry covers o
 | [#13](https://gist.github.com/renezander030/26d46d4c7fb9ab1b43fe19bc5bad6d07) | Inbound Agent Webhook Auth | Constant-time bearer token, fail-closed on empty secret, async 202 dispatch |
 | [#14](https://gist.github.com/renezander030/262d8b8c44b4cddf51b3b84c40f3f669) | Self-Improving Voice Agent | Human-approved prompt diffs; harvest > group > propose > 2 approval gates > git commit > staging smoke > auto-versioned publish |
 | [#15](https://gist.github.com/renezander030/ad81c7a805a09a844983f881e2c487e5) | AI Action Audit Trail | Append-only `action_approvals` table: who approved which payload, when; gate-violation query; GDPR Art. 22 provenance |
+| [#16](https://gist.github.com/renezander030/77b1e95ae3a7b4460db0714b7dcf35d6) | Degraded Retrieval | Keyword fallback + RRF when the embedding provider dies; per-source status, `degraded: true` |
+| [#17](https://gist.github.com/renezander030/34d7197e2d9f83d986766742ab979d04) | Validate Before You Log | Guard above the first log line; capped log preview; an ordering test that isn't vacuous |
 
 Reference implementation for entries #1, #2, #5, #6, #7, #9, #10, #11, #12, #13: [draftcat](https://github.com/renezander030/draftcat) (Go, MIT).
 
