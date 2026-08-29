@@ -2,22 +2,34 @@
 
 # Hey, I'm René
 
-I build **automation CLIs and AI-agent tooling** — sharp single-purpose command-line tools, plus the production patterns (approval gates, schema validation, audit logs) that let agents touch real systems safely.
+**Enterprise AI Architect** — production context layers, governed agent workflows, and EU-ready AI systems.
 
-If you script things, run agents, or want CLIs that do one job well with JSON output you can pipe — this profile is for you. **Follow for new CLIs and production-AI patterns** as they ship.
+I build the parts that decide whether an agent survives contact with a real company: where its context comes from, what it is allowed to do, and how you prove afterwards that it behaved. Deterministic-first, human-approved, self-hostable — no data leaving your VPC unless you decided it should.
 
-[![Follow](https://img.shields.io/github/followers/renezander030?label=Follow&style=social)](https://github.com/renezander030?tab=followers) [![capcut-cli stars](https://img.shields.io/github/stars/renezander030/capcut-cli?label=capcut-cli&style=social)](https://github.com/renezander030/capcut-cli) [![Profile views](https://komarev.com/ghpvc/?username=renezander030&label=Profile+views&color=14b8a6&style=flat)](https://github.com/renezander030)
+[![Follow](https://img.shields.io/github/followers/renezander030?label=Follow&style=social)](https://github.com/renezander030?tab=followers) [![agentic-task-system](https://img.shields.io/github/stars/renezander030/agentic-task-system?label=agentic-task-system&style=social)](https://github.com/renezander030/agentic-task-system) [![draftcat](https://img.shields.io/github/stars/renezander030/draftcat?label=draftcat&style=social)](https://github.com/renezander030/draftcat) [![Profile views](https://komarev.com/ghpvc/?username=renezander030&label=Profile+views&color=14b8a6&style=flat)](https://github.com/renezander030)
 
 > **New:** merged into **[tetherto/qvac](https://github.com/tetherto/qvac)** — the official repo of Tether's QVAC AI platform: [#3729 · validate RAG queries before logging](https://github.com/tetherto/qvac/pull/3729) ![Merged](https://img.shields.io/badge/Merged-purple) (Aug 2026) · [all contributions ↓](#open-source-contributions)
 
-## Start here
+## The architecture
 
-- **[capcut-cli](https://github.com/renezander030/capcut-cli)** — CLI to edit CapCut / JianYing drafts (subtitles, timing, speed, templates, cut long-form → shorts). No API; reads `draft_content.json` directly
-- **[draftcat](https://github.com/renezander030/draftcat)** — governed AI pipelines for service businesses: deterministic-first, operator-approved, single Go binary (MIT)
-- **[agentic-task-system](https://github.com/renezander030/agentic-task-system)** — your task manager is the best agent memory you're not using: hybrid retrieval (RRF) over TickTick / Obsidian
-- **[agent-approval-gate](https://github.com/renezander030/agent-approval-gate)** — `draft → validate → approve → dispatch → audit` pattern with JSON schemas, n8n workflow, and email-approval example
-- **[skillgate](https://github.com/renezander030/skillgate)** — deterministic finish-line gates for AI coding agents: a model-independent evaluator that blocks commit/publish until your definition-of-done passes. opencode, Claude Code, pre-commit, CI
-- **[browserground](https://github.com/renezander030/browserground)** — local UI-grounding specialist for hybrid AI agents: Qwen3-VL-2B LoRA, screenshot + target → strict JSON bbox. Drop-in for Claude Code, Codex, browser-use
+Three layers. Each repo stands on its own; together they are one path from *what the agent knows* to *what it did and why*.
+
+### Context Layer — where the facts come from, and whether you can trust them
+
+- **[agentic-task-system](https://github.com/renezander030/agentic-task-system)** [![release](https://img.shields.io/github/v/release/renezander030/agentic-task-system?label=&style=flat-square&color=14b8a6)](https://github.com/renezander030/agentic-task-system/releases) — CLI + MCP that turns the systems you already run (TickTick, Notion, GitHub, Obsidian, Airtable, Google Tasks) into agent context. Hybrid RRF retrieval, provenance on every result, reviewed writes, undo. The real systems stay the source of truth.
+- **[graphiti-local](https://github.com/renezander030/graphiti-local)** [![release](https://img.shields.io/github/v/release/renezander030/graphiti-local?label=&style=flat-square&color=14b8a6)](https://github.com/renezander030/graphiti-local/releases) — local-first temporal knowledge graph: six read-only MCP retrieval tools, a `kg` CLI, human-gated fact ingestion. Built on Graphiti, runs on your own hardware. Answers *"what was true at the time?"*, not just *"what is true now?"*
+
+### Execution Layer — what the agent is allowed to do
+
+- **[draftcat](https://github.com/renezander030/draftcat)** [![release](https://img.shields.io/github/v/release/renezander030/draftcat?label=&style=flat-square&color=14b8a6)](https://github.com/renezander030/draftcat/releases) — governed AI pipelines for service businesses: deterministic-first, operator-approved, single Go binary (MIT). Tool-call gates, HITL, audit trail.
+- **[agent-approval-gate](https://github.com/renezander030/agent-approval-gate)** — the `draft → validate → approve → dispatch → audit` pattern with JSON schemas, an n8n workflow, and an email-approval example.
+
+### Assurance Layer — how you prove it still works next quarter
+
+- **[processbench](https://github.com/renezander030/processbench)** [![release](https://img.shields.io/github/v/release/renezander030/processbench?label=&style=flat-square&color=14b8a6)](https://github.com/renezander030/processbench/releases) — business-specific benchmark packs for repeatable workflow regression checks. Swap a model, measure what actually moved.
+- **[skillgate](https://github.com/renezander030/skillgate)** [![release](https://img.shields.io/github/v/release/renezander030/skillgate?label=&style=flat-square&color=14b8a6)](https://github.com/renezander030/skillgate/releases) — deterministic finish-line gates for AI coding agents: a model-independent evaluator that blocks commit/publish until your definition-of-done passes. opencode, Claude Code, pre-commit, CI.
+
+**Enterprise integration:** Azure, Microsoft Teams, Jira, Confluence, HubSpot, LeanIX — from delivery work in regulated environments, not from demos.
 
 ## The series
 
@@ -55,11 +67,18 @@ Follow if you're building agents that need to work outside demos.
 
 [All merged PRs](https://github.com/pulls?q=is%3Apr+author%3Arenezander030+is%3Amerged+archived%3Afalse)
 
+## Creator tooling
+
+A separate track from the enterprise work — same engineering standard, different audience.
+
+- **[capcut-cli](https://github.com/renezander030/capcut-cli)** [![stars](https://img.shields.io/github/stars/renezander030/capcut-cli?style=flat-square&label=&color=14b8a6)](https://github.com/renezander030/capcut-cli) — independent CLI to edit CapCut / JianYing projects: subtitles, timing, speed, templates, cut long-form → shorts. No API; reads `draft_content.json` directly.
+- **[browserground](https://github.com/renezander030/browserground)** — local UI-grounding specialist for hybrid AI agents: Qwen3-VL-2B LoRA, screenshot + target → strict JSON bbox. Drop-in for Claude Code, Codex, browser-use.
+
 [![GitHub stats](https://github-readme-stats.vercel.app/api?username=renezander030&show_icons=true&hide=stars,issues&hide_border=true&card_width=440)](https://github.com/renezander030)
 
 ---
 
-**Stack:** Python, Go, TypeScript, Node.js, Kubernetes, Linux, systemd, vector databases, LLM APIs.
+**Stack:** Python, Go, TypeScript, Node.js, Kubernetes, Linux, systemd, vector databases, temporal knowledge graphs, MCP, LLM APIs.
 
 **Website:** [renezander.com](https://renezander.com) · **YouTube:** [@determa](https://www.youtube.com/@determa)
 
