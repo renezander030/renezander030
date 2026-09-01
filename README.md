@@ -44,13 +44,11 @@ Follow if you're building agents that need to work outside demos.
 
 ## Recent gists
 
-| Gist | Topic |
-|---|---|
+| [Vector dimension mismatch, expected 1024 but got 768: the silent embedding-width bug in Graphiti + FalkorDB](https://gist.github.com/renezander030/c0a62739bbe114a2fc5b3cab4d7d307c) | Vector dimension mismatch expected 1024 but got 768 / graphiti EMBEDDING_DIM read at import time / client-side truncating slice / nomic-embed-text 768 vs text-embedding-3-small 1536 / FalkorDB vec.cosineDistance / silent embedding corruption / kg doctor preflight (September 2026) |
+| [Never let an agent write to the knowledge graph: queued proposals, one writer, and refusals that exit non-zero (PAAN #18)](https://gist.github.com/renezander030/a3600b3378b01f00080f9f41150f16d2) | add_episode cross-group data contamination / graphiti shared self.driver mutation race / agent write gate / propose approve drain / a refusal that exits 0 is not a refusal / single writer / read-only MCP tools (September 2026) |
 | [Validate before you log: the RAG query guard that belongs above your first log line (PAAN #17)](https://gist.github.com/renezander030/34d7197e2d9f83d986766742ab979d04) | RAG query validation / TypeError Cannot read properties of null reading 'substring' / validate before logging / log-ordering test / whitespace-only query / log injection / zod guard / capped log preview (August 2026) |
 | [GPT-5 / o-series vision calls failing in Go: MaxCompletionTokens and the empty finish_reason=length response](https://gist.github.com/renezander030/15f07a6a9e4cf5780f611eeeead5f6da) | gpt-5 vision empty response / this model is not supported MaxTokens please use MaxCompletionTokens / finish_reason length / go-openai ReasoningValidator / o-series temperature beta-limitations / reasoning tokens / max_completion_tokens (August 2026) |
 | [Retrieval that degrades instead of failing: keyword fallback when the embedder dies (PAAN #16)](https://gist.github.com/renezander030/77b1e95ae3a7b4460db0714b7dcf35d6) | agent memory degraded retrieval / Premature close / APIConnectionError / embedding provider down / keyword fallback / reciprocal rank fusion / RRF / per-source status / no vector database (August 2026) |
-| [Cross-source agent memory for Claude Code: GitHub + Notion + your task app, one RRF query](https://gist.github.com/renezander030/10272100535f9ab1ea0eae193cf3936f) | cross-source retrieval / fuse GitHub Notion TickTick / one ranked list / composite adapter / RRF / no vector database / MCP / Claude Code (June 2026) |
-| [GitHub issues as agent memory for Claude Code — hybrid retrieval, no vector DB](https://gist.github.com/renezander030/1fa5f038e8e1161a75300a34ab534bb2) | github mcp / github issues as agent memory / issues + discussions / fine-grained PAT / hybrid RRF retrieval / no vector database / Claude Code (June 2026) |
 
 [All gists →](https://gist.github.com/renezander030)
 
@@ -95,6 +93,7 @@ A gist series on production-grade patterns for AI pipelines. Each entry covers o
 | [#5](https://gist.github.com/renezander030/8a23e32cde0c882a5aa069c4bfdf697f) | SQLite Dedup + Crash Safety | WAL mode, seen_items, audit log |
 | [#6](https://gist.github.com/renezander030/213ffdf1ab1bdb169881927bc7080270) | Prompt-Injection Defense | Input sanitization, schema validation |
 | [#7](https://gist.github.com/renezander030/7780cbc0b3ad4e802e8fba8bfc1c3a66) | PDF Cite Verification | Auditable LLM extraction with per-fragment bounding boxes |
+| [#8](https://gist.github.com/renezander030/807559488f523892fc25870bf9501d29) | Stateless JSONL Queue Runner | One job per line in, one result per line out; no daemon, no open port |
 | [#10](https://gist.github.com/renezander030/2f0754a4babd185d22d8498d5dc04982) | Deterministic Step Pipelines | Fixed typed steps; the LLM never picks the next action |
 | [#11](https://gist.github.com/renezander030/a058fc0d5e7e7fa209d30cfa48e82ebb) | Pipeline Fixture Testing | Dry-run pipelines from JSON fixtures; zero API calls, deterministic CI |
 | [#12](https://gist.github.com/renezander030/a28f118dec07d275ccc825aa833aba92) | LLM Skills as YAML | Prompt + output_schema + role in versioned YAML; validated by a linter |
@@ -103,6 +102,7 @@ A gist series on production-grade patterns for AI pipelines. Each entry covers o
 | [#15](https://gist.github.com/renezander030/ad81c7a805a09a844983f881e2c487e5) | AI Action Audit Trail | Append-only `action_approvals` table: who approved which payload, when; gate-violation query; GDPR Art. 22 provenance |
 | [#16](https://gist.github.com/renezander030/77b1e95ae3a7b4460db0714b7dcf35d6) | Degraded Retrieval | Keyword fallback + RRF when the embedding provider dies; per-source status, `degraded: true` |
 | [#17](https://gist.github.com/renezander030/34d7197e2d9f83d986766742ab979d04) | Validate Before You Log | Guard above the first log line; capped log preview; an ordering test that isn't vacuous |
+| [#18](https://gist.github.com/renezander030/a3600b3378b01f00080f9f41150f16d2) | Gated Knowledge-Graph Writes | Agent may only queue a proposal; a human applies it; one writer; a refusal exits non-zero |
 
 Reference implementation for entries #1, #2, #5, #6, #7, #9, #10, #11, #12, #13: [draftcat](https://github.com/renezander030/draftcat) (Go, MIT).
 
