@@ -35,6 +35,7 @@ Three layers. Each repo stands on its own; together they are one path from *what
 ## The series
 
 **Production AI Automation Notes** — a running set of repos and gists on:
+- permission-aware retrieval that never leaks through counts, titles or provenance chains (#19)
 - knowledge graphs people fill through verdicts, never through an agent (#18)
 - approval gates for AI agents
 - MCP server security (permissions, tenants, audit logs)
@@ -48,11 +49,11 @@ Follow if you're building agents that need to work outside demos.
 
 | Gist | Topic |
 |---|---|
+| [Dropped without a count: permission-aware retrieval that never leaks through counts, titles or provenance chains (PAAN #19)](https://gist.github.com/renezander030/4c97bc473db055f2aa6d71be4c4551ce) | delegated reads / membership at question time / count leaks / title leaks / provenance-chain leaks / per-identity caches (Sep 2026) |
 | [Never let an agent write to the knowledge graph: queued proposals, one writer, and why a refusal that exits 0 is not a refusal (PAAN #18)](https://gist.github.com/renezander030/a3600b3378b01f00080f9f41150f16d2) | agent memory / human-gated writes / one writer / graphiti cross-group contamination / exit codes (Sep 2026) |
 | [Vector dimension mismatch, expected 1024 but got 768: the silent embedding-width bug in Graphiti + FalkorDB](https://gist.github.com/renezander030/c0a62739bbe114a2fc5b3cab4d7d307c) | embedding width / EMBEDDING_DIM at import time / nomic-embed-text 768 vs text-embedding-3-small 1536 / FalkorDB (Sep 2026) |
 | [Validate before you log: the RAG query guard above your first log line, and the ordering test that isn't vacuous (PAAN #17)](https://gist.github.com/renezander030/34d7197e2d9f83d986766742ab979d04) | RAG query validation / log ordering / fail before you log (Aug 2026) |
 | [GPT-5 / o-series vision calls failing in Go: go-openai client-side rejections and the empty response with finish_reason=length](https://gist.github.com/renezander030/15f07a6a9e4cf5780f611eeeead5f6da) | go-openai / MaxCompletionTokens / finish_reason=length / vision (Aug 2026) |
-| [The Agent Review Cost Worksheet: what every AI-authored change costs in senior review hours, and how to buy that cost down](https://gist.github.com/renezander030/05f07a6b8dd2d0ae171a6d29bbcea081) | review cost / write surface / senior hours per AI-authored change (Aug 2026) |
 
 [All gists →](https://gist.github.com/renezander030)
 
@@ -107,6 +108,7 @@ A gist series on production-grade patterns for AI pipelines. Each entry covers o
 | [#16](https://gist.github.com/renezander030/77b1e95ae3a7b4460db0714b7dcf35d6) | Agent Memory That Degrades | Keyword fallback when the embedding provider dies; the read path never fails outright |
 | [#17](https://gist.github.com/renezander030/34d7197e2d9f83d986766742ab979d04) | Validate Before You Log | RAG query guard above the first log line, plus the ordering test |
 | [#18](https://gist.github.com/renezander030/a3600b3378b01f00080f9f41150f16d2) | Never Let an Agent Write to the Knowledge Graph | Queued proposals, one writer; a refusal that exits 0 is not a refusal |
+| [#19](https://gist.github.com/renezander030/4c97bc473db055f2aa6d71be4c4551ce) | Dropped Without a Count | Delegated reads, membership at question time; cite what the caller may open or drop it |
 
 Reference implementation for entries #1, #2, #5, #6, #7, #9, #10, #11, #12, #13: [draftcat](https://github.com/renezander030/draftcat) (Go, MIT).
 
