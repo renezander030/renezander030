@@ -2,9 +2,9 @@
 
 # Hey, I'm René
 
-**Enterprise AI Architect** — production context layers, governed agent workflows, and EU-ready AI systems.
+**Enterprise AI Architect** — I make operational context move automatically across chat, tickets, wiki and CRM.
 
-I build the parts that decide whether an agent survives contact with a real company: where its context comes from, what it is allowed to do, and how you prove afterwards that it behaved. Deterministic-first, human-approved, self-hostable — no data leaving your VPC unless you decided it should.
+The hard part is mapping the same people, teams, customers, projects and decisions across systems that use different vocabularies. A temporal knowledge graph resolves that mapping and shares each accepted fact where it belongs. Delegated reads, human-approved writes and audit trails keep the flow safe enough for production.
 
 [![Follow](https://img.shields.io/github/followers/renezander030?label=Follow&style=social)](https://github.com/renezander030?tab=followers) [![agentic-task-system](https://img.shields.io/github/stars/renezander030/agentic-task-system?label=agentic-task-system&style=social)](https://github.com/renezander030/agentic-task-system) [![draftcat](https://img.shields.io/github/stars/renezander030/draftcat?label=draftcat&style=social)](https://github.com/renezander030/draftcat) [![Profile views](https://komarev.com/ghpvc/?username=renezander030&label=Profile+views&color=14b8a6&style=flat)](https://github.com/renezander030)
 
@@ -12,11 +12,11 @@ I build the parts that decide whether an agent survives contact with a real comp
 
 ## The architecture
 
-Three layers. Each repo stands on its own; together they are one path from *what the agent knows* to *what it did and why*.
+Map once, share continuously. The context layer connects each system's vocabulary so accepted facts reach the right people and tools; the execution and assurance layers govern what moves and prove what happened.
 
-### Context Layer — where the facts come from, and whether you can trust them
+### Mapping & Sharing Layer — connect facts across systems and deliver them where they belong
 
-- **In production: [operational context layer](https://renezander.com/case-studies/operational-context-layer-governed-actions/)**: governed answers and human-approved actions across chat, tickets, wiki and CRM. Every read as the signed-in person (no service account), every write behind a human tap on every door incl. MCP, a knowledge graph people fill through verdicts. Case study with synthetic screens
+- **In production: [operational context layer](https://renezander.com/case-studies/operational-context-layer-governed-actions/)**: maps people, teams, customers, projects and decisions across chat, tickets, wiki and CRM, then automatically shares accepted facts where they belong. Reads run as the signed-in person, never a service account; writes wait for a human decision on every door, including MCP. Case study with synthetic screens
 - **[agentic-task-system](https://github.com/renezander030/agentic-task-system)** [![release](https://img.shields.io/github/v/release/renezander030/agentic-task-system?label=&style=flat-square&color=14b8a6)](https://github.com/renezander030/agentic-task-system/releases) — CLI + MCP that turns the systems you already run (TickTick, Notion, GitHub, Obsidian, Airtable, Google Tasks) into agent context. Hybrid RRF retrieval, provenance on every result, reviewed writes, undo. The real systems stay the source of truth.
 - **[graphiti-local](https://github.com/renezander030/graphiti-local)** [![release](https://img.shields.io/github/v/release/renezander030/graphiti-local?label=&style=flat-square&color=14b8a6)](https://github.com/renezander030/graphiti-local/releases) — local-first temporal knowledge graph: six read-only MCP retrieval tools, a `kg` CLI, human-gated fact ingestion. Built on Graphiti, runs on your own hardware. Answers *"what was true at the time?"*, not just *"what is true now?"*
 
