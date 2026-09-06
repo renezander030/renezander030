@@ -16,6 +16,7 @@ Three layers. Each repo stands on its own; together they are one path from *what
 
 ### Context Layer — where the facts come from, and whether you can trust them
 
+- **In production: [operational context layer](https://renezander.com/case-studies/operational-context-layer-governed-actions/)**: governed answers and human-approved actions across chat, tickets, wiki and CRM. Every read as the signed-in person (no service account), every write behind a human tap on every door incl. MCP, a knowledge graph people fill through verdicts. Case study with synthetic screens
 - **[agentic-task-system](https://github.com/renezander030/agentic-task-system)** [![release](https://img.shields.io/github/v/release/renezander030/agentic-task-system?label=&style=flat-square&color=14b8a6)](https://github.com/renezander030/agentic-task-system/releases) — CLI + MCP that turns the systems you already run (TickTick, Notion, GitHub, Obsidian, Airtable, Google Tasks) into agent context. Hybrid RRF retrieval, provenance on every result, reviewed writes, undo. The real systems stay the source of truth.
 - **[graphiti-local](https://github.com/renezander030/graphiti-local)** [![release](https://img.shields.io/github/v/release/renezander030/graphiti-local?label=&style=flat-square&color=14b8a6)](https://github.com/renezander030/graphiti-local/releases) — local-first temporal knowledge graph: six read-only MCP retrieval tools, a `kg` CLI, human-gated fact ingestion. Built on Graphiti, runs on your own hardware. Answers *"what was true at the time?"*, not just *"what is true now?"*
 
@@ -34,6 +35,7 @@ Three layers. Each repo stands on its own; together they are one path from *what
 ## The series
 
 **Production AI Automation Notes** — a running set of repos and gists on:
+- knowledge graphs people fill through verdicts, never through an agent (#18)
 - approval gates for AI agents
 - MCP server security (permissions, tenants, audit logs)
 - Claude Code policies for company repos
@@ -44,11 +46,13 @@ Follow if you're building agents that need to work outside demos.
 
 ## Recent gists
 
-| [Vector dimension mismatch, expected 1024 but got 768: the silent embedding-width bug in Graphiti + FalkorDB](https://gist.github.com/renezander030/c0a62739bbe114a2fc5b3cab4d7d307c) | Vector dimension mismatch expected 1024 but got 768 / graphiti EMBEDDING_DIM read at import time / client-side truncating slice / nomic-embed-text 768 vs text-embedding-3-small 1536 / FalkorDB vec.cosineDistance / silent embedding corruption / kg doctor preflight (September 2026) |
-| [Never let an agent write to the knowledge graph: queued proposals, one writer, and refusals that exit non-zero (PAAN #18)](https://gist.github.com/renezander030/a3600b3378b01f00080f9f41150f16d2) | add_episode cross-group data contamination / graphiti shared self.driver mutation race / agent write gate / propose approve drain / a refusal that exits 0 is not a refusal / single writer / read-only MCP tools (September 2026) |
-| [Validate before you log: the RAG query guard that belongs above your first log line (PAAN #17)](https://gist.github.com/renezander030/34d7197e2d9f83d986766742ab979d04) | RAG query validation / TypeError Cannot read properties of null reading 'substring' / validate before logging / log-ordering test / whitespace-only query / log injection / zod guard / capped log preview (August 2026) |
-| [GPT-5 / o-series vision calls failing in Go: MaxCompletionTokens and the empty finish_reason=length response](https://gist.github.com/renezander030/15f07a6a9e4cf5780f611eeeead5f6da) | gpt-5 vision empty response / this model is not supported MaxTokens please use MaxCompletionTokens / finish_reason length / go-openai ReasoningValidator / o-series temperature beta-limitations / reasoning tokens / max_completion_tokens (August 2026) |
-| [Retrieval that degrades instead of failing: keyword fallback when the embedder dies (PAAN #16)](https://gist.github.com/renezander030/77b1e95ae3a7b4460db0714b7dcf35d6) | agent memory degraded retrieval / Premature close / APIConnectionError / embedding provider down / keyword fallback / reciprocal rank fusion / RRF / per-source status / no vector database (August 2026) |
+| Gist | Topic |
+|---|---|
+| [Never let an agent write to the knowledge graph: queued proposals, one writer, and why a refusal that exits 0 is not a refusal (PAAN #18)](https://gist.github.com/renezander030/a3600b3378b01f00080f9f41150f16d2) | agent memory / human-gated writes / one writer / graphiti cross-group contamination / exit codes (Sep 2026) |
+| [Vector dimension mismatch, expected 1024 but got 768: the silent embedding-width bug in Graphiti + FalkorDB](https://gist.github.com/renezander030/c0a62739bbe114a2fc5b3cab4d7d307c) | embedding width / EMBEDDING_DIM at import time / nomic-embed-text 768 vs text-embedding-3-small 1536 / FalkorDB (Sep 2026) |
+| [Validate before you log: the RAG query guard above your first log line, and the ordering test that isn't vacuous (PAAN #17)](https://gist.github.com/renezander030/34d7197e2d9f83d986766742ab979d04) | RAG query validation / log ordering / fail before you log (Aug 2026) |
+| [GPT-5 / o-series vision calls failing in Go: go-openai client-side rejections and the empty response with finish_reason=length](https://gist.github.com/renezander030/15f07a6a9e4cf5780f611eeeead5f6da) | go-openai / MaxCompletionTokens / finish_reason=length / vision (Aug 2026) |
+| [The Agent Review Cost Worksheet: what every AI-authored change costs in senior review hours, and how to buy that cost down](https://gist.github.com/renezander030/05f07a6b8dd2d0ae171a6d29bbcea081) | review cost / write surface / senior hours per AI-authored change (Aug 2026) |
 
 [All gists →](https://gist.github.com/renezander030)
 
@@ -100,9 +104,9 @@ A gist series on production-grade patterns for AI pipelines. Each entry covers o
 | [#13](https://gist.github.com/renezander030/26d46d4c7fb9ab1b43fe19bc5bad6d07) | Inbound Agent Webhook Auth | Constant-time bearer token, fail-closed on empty secret, async 202 dispatch |
 | [#14](https://gist.github.com/renezander030/262d8b8c44b4cddf51b3b84c40f3f669) | Self-Improving Voice Agent | Human-approved prompt diffs; harvest > group > propose > 2 approval gates > git commit > staging smoke > auto-versioned publish |
 | [#15](https://gist.github.com/renezander030/ad81c7a805a09a844983f881e2c487e5) | AI Action Audit Trail | Append-only `action_approvals` table: who approved which payload, when; gate-violation query; GDPR Art. 22 provenance |
-| [#16](https://gist.github.com/renezander030/77b1e95ae3a7b4460db0714b7dcf35d6) | Degraded Retrieval | Keyword fallback + RRF when the embedding provider dies; per-source status, `degraded: true` |
-| [#17](https://gist.github.com/renezander030/34d7197e2d9f83d986766742ab979d04) | Validate Before You Log | Guard above the first log line; capped log preview; an ordering test that isn't vacuous |
-| [#18](https://gist.github.com/renezander030/a3600b3378b01f00080f9f41150f16d2) | Gated Knowledge-Graph Writes | Agent may only queue a proposal; a human applies it; one writer; a refusal exits non-zero |
+| [#16](https://gist.github.com/renezander030/77b1e95ae3a7b4460db0714b7dcf35d6) | Agent Memory That Degrades | Keyword fallback when the embedding provider dies; the read path never fails outright |
+| [#17](https://gist.github.com/renezander030/34d7197e2d9f83d986766742ab979d04) | Validate Before You Log | RAG query guard above the first log line, plus the ordering test |
+| [#18](https://gist.github.com/renezander030/a3600b3378b01f00080f9f41150f16d2) | Never Let an Agent Write to the Knowledge Graph | Queued proposals, one writer; a refusal that exits 0 is not a refusal |
 
 Reference implementation for entries #1, #2, #5, #6, #7, #9, #10, #11, #12, #13: [draftcat](https://github.com/renezander030/draftcat) (Go, MIT).
 
