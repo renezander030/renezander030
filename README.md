@@ -113,3 +113,12 @@ A gist series on production-grade patterns for AI pipelines. Each entry covers o
 Reference implementation for entries #1, #2, #5, #6, #7, #9, #10, #11, #12, #13: [draftcat](https://github.com/renezander030/draftcat) (Go, MIT).
 
 [All gists →](https://gist.github.com/renezander030)
+
+---
+
+## Working with me
+
+I build these systems for companies as a freelance architect: the mapping between systems, the gates on what an agent may do in production, and the evidence that it still holds next quarter. It usually starts as one governed path in production rather than a platform, which is what the [operational context layer case study](https://renezander.com/case-studies/operational-context-layer-governed-actions/) walks through end to end.
+
+- **Email** — [rene@renezander.com](mailto:rene@renezander.com)
+- **Freelance profile, references and rates** — [malt.de/profile/renezander](https://www.malt.de/profile/renezander)
