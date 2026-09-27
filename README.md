@@ -1,4 +1,4 @@
-[![René Zander — AI agents that act on today's facts; sourced answers and human-approved actions in DACH](banner.png)](https://renezander.com/knowledge-graph-consulting/)
+[![René Zander — AI agents that act on today's facts; sourced answers and human-approved actions in DACH](banner-sep27.png)](https://renezander.com/knowledge-graph-consulting/)
 
 # René Zander
 
