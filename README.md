@@ -36,6 +36,8 @@ I publish implementation notes for people building agents beyond demos. Recent e
 - [Why an agent proposes facts but never writes directly to the knowledge graph](https://gist.github.com/renezander030/a3600b3378b01f00080f9f41150f16d2)
 - [Validate a RAG query before its first log line](https://gist.github.com/renezander030/34d7197e2d9f83d986766742ab979d04)
 
+[Series index — all 19 entries](https://gist.github.com/renezander030/9069db775e494ffd2cdd5a09adf83add) · [Tested automation examples](https://github.com/renezander030/automation-reference-examples)
+
 [Browse all notes](https://gist.github.com/renezander030)
 
 ## Work with me
