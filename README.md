@@ -22,7 +22,7 @@ The case study describes a production workflow. Its public demo and screenshots 
 
 ## Open source and engineering proof
 
-- [agentic-task-system](https://github.com/renezander030/agentic-task-system) connects existing task and knowledge tools to agent context, with provenance, reviewed writes and undo. The underlying systems remain the source of truth.
+- [agentic-task&#45;system](https://github.com/renezander030/agentic-task%2Dsystem) connects existing task and knowledge tools to agent context, with provenance, reviewed writes and undo. The underlying systems remain the source of truth.
 - [skillgate](https://github.com/renezander030/skillgate) runs deterministic completion checks for AI coding agents before commit or publication.
 - My merged contributions include [RAG query validation before logging in Tether's QVAC](https://github.com/tetherto/qvac/pull/3729) and [GPT-5/o-series vision support in WeKnora](https://github.com/Tencent/WeKnora/pull/2614). [See all merged PRs](https://github.com/pulls?q=is%3Apr+author%3Arenezander030+is%3Amerged+archived%3Afalse).
 
@@ -32,9 +32,9 @@ I also build creator tooling: [capcut-cli](https://github.com/renezander030/capc
 
 I publish implementation notes for people building agents beyond demos. Recent examples:
 
+- [HTTP If-Match and 412: stop stale agent writes after approval](https://gist.github.com/renezander030/383aa72aa2df60379f72e12b5602c09d) — atomic target-version checks preserve a newer human edit; includes a runnable HTTP race fixture.
 - [Permission-aware retrieval without count, title or provenance leaks](https://gist.github.com/renezander030/4c97bc473db055f2aa6d71be4c4551ce)
 - [Why an agent proposes facts but never writes directly to the knowledge graph](https://gist.github.com/renezander030/a3600b3378b01f00080f9f41150f16d2)
-- [Validate a RAG query before its first log line](https://gist.github.com/renezander030/34d7197e2d9f83d986766742ab979d04)
 
 [Series index — all 19 entries](https://gist.github.com/renezander030/9069db775e494ffd2cdd5a09adf83add) · [Tested automation examples](https://github.com/renezander030/automation-reference-examples)
 
