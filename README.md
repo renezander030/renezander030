@@ -8,9 +8,15 @@ I help teams whose AI assistants already read chat, tickets, wiki and CRM answer
 
 **Explore the work:** [50-second demo and case study](https://renezander.com/case-studies/operational-context-layer-governed-actions/) · [Consulting approach](https://renezander.com/knowledge-graph-consulting/) · [Discuss your workflow](https://renezander.com/#meeting)
 
-**Building this yourself?** Follow this profile for implementation notes and open-source tools for governed AI systems.
-
 The case study describes a production workflow. Its public demo and screenshots use fictional records to protect the client.
+
+## Building AI agents yourself?
+
+The parts of my client work that hold up in production become open source. **Follow this profile** to see the next ones when they ship, together with the implementation notes below.
+
+- [agentic-task&#45;system](https://github.com/renezander030/agentic-task%2Dsystem) gives an agent task and knowledge context over the tools you already use (CLI + MCP), with provenance, reviewed writes and undo. The underlying systems remain the source of truth.
+- [skillgate](https://github.com/renezander030/skillgate) blocks commit or publish until your definition of done passes, for when a coding agent reports "done" too early. Works in Claude Code, opencode, pre-commit and CI.
+- [agent-approval-gate](https://github.com/renezander030/agent-approval-gate) and [draftcat](https://github.com/renezander030/draftcat) for agents that send or write for real; [graphiti-local](https://github.com/renezander030/graphiti-local) for memory that knows what was true when.
 
 ## Start with the problem you have
 
@@ -20,11 +26,9 @@ The case study describes a production workflow. Its public demo and screenshots 
 | Let an agent act without giving it unchecked write access | [draftcat](https://github.com/renezander030/draftcat) and [agent-approval-gate](https://github.com/renezander030/agent-approval-gate) — proposals, human verdicts and audited dispatch |
 | Keep track of what was true when | [graphiti-local](https://github.com/renezander030/graphiti-local) — a local temporal knowledge graph with read-only MCP retrieval and human-gated fact ingestion |
 
-## Open source and engineering proof
+## Upstream contributions
 
-- [agentic-task&#45;system](https://github.com/renezander030/agentic-task%2Dsystem) connects existing task and knowledge tools to agent context, with provenance, reviewed writes and undo. The underlying systems remain the source of truth.
-- [skillgate](https://github.com/renezander030/skillgate) runs deterministic completion checks for AI coding agents before commit or publication.
-- My merged contributions include [RAG query validation before logging in Tether's QVAC](https://github.com/tetherto/qvac/pull/3729) and [GPT-5/o-series vision support in WeKnora](https://github.com/Tencent/WeKnora/pull/2614). [See all merged PRs](https://github.com/pulls?q=is%3Apr+author%3Arenezander030+is%3Amerged+archived%3Afalse).
+My merged contributions include [RAG query validation before logging in Tether's QVAC](https://github.com/tetherto/qvac/pull/3729) and [GPT-5/o-series vision support in WeKnora](https://github.com/Tencent/WeKnora/pull/2614). [See all merged PRs](https://github.com/pulls?q=is%3Apr+author%3Arenezander030+is%3Amerged+archived%3Afalse).
 
 I also build creator tooling: [capcut-cli](https://github.com/renezander030/capcut-cli) is an independent CLI for editing CapCut/JianYing project files.
 
